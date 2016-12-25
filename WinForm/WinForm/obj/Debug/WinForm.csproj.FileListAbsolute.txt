@@ -1,0 +1,9 @@
+D:\Sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.exe.config
+D:\Sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.exe
+D:\Sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.pdb
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.csprojResolveAssemblyReference.cache
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.Form1.resources
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.exe
+D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.pdb
