@@ -7,3 +7,5 @@ D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resou
 D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
 D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.exe
 D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.pdb
+D:\Sharp\homework14\WinForm\WinForm\bin\Debug\Common.exe
+D:\Sharp\homework14\WinForm\WinForm\bin\Debug\Common.pdb
