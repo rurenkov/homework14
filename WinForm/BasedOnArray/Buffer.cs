@@ -22,9 +22,7 @@ namespace BasedOnArray
 
             free = Array.Length - head;
         }
-
-
-
+        
         public abstract bool IsFull();
         public abstract bool IsEmpty();
         public abstract void Print();

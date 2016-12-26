@@ -9,3 +9,6 @@ D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.exe
 D:\Sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.pdb
 D:\Sharp\homework14\WinForm\WinForm\bin\Debug\Common.exe
 D:\Sharp\homework14\WinForm\WinForm\bin\Debug\Common.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.exe.config
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.exe
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.pdb
