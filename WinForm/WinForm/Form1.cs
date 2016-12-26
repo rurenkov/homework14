@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,23 +30,23 @@ namespace WinForm
 
         private void Add_Click(object sender, EventArgs e)
         {
+            int d = 0;
 
-            int size = 0;
-            if (!Int32.TryParse(numberOfElementsToAddTextBox.Text, out size) || size == 0)
+            while (!int.TryParse(add_data_TextChanged, out d))
             {
-                MessageBox.Show(String.Format("Please, check the value you entered in 'Number Of Elements To Add:' field"));
+                Console.WriteLine("Try again..");
             }
-            else
-            {
-                Stopwatch watchArrayStackAdd = new Stopwatch();
-                Stopwatch watchDynamicArrayStackAdd = new Stopwatch();
-                Stopwatch watchLinkedListStackAdd = new Stopwatch();
-                Stopwatch watchEmbeddedStackAdd = new Stopwatch();
 
-                Stopwatch watchArrayStackRemove = new Stopwatch();
-                Stopwatch watchDynamicArrayStackRemove = new Stopwatch();
-                Stopwatch watchLinkedListStackRemove = new Stopwatch();
-                Stopwatch watchEmbeddedStackRemove = new Stopwatch();
+                       
+                Stopwatch watchArrayStackAdd = new Stopwatch();
+                //Stopwatch watchDynamicArrayStackAdd = new Stopwatch();
+                //Stopwatch watchLinkedListStackAdd = new Stopwatch();
+                //Stopwatch watchEmbeddedStackAdd = new Stopwatch();
+
+                //Stopwatch watchArrayStackRemove = new Stopwatch();
+                //Stopwatch watchDynamicArrayStackRemove = new Stopwatch();
+                //Stopwatch watchLinkedListStackRemove = new Stopwatch();
+                //Stopwatch watchEmbeddedStackRemove = new Stopwatch();
 
                 //Array based
                 watchArrayStackAdd.Start();
@@ -69,5 +70,10 @@ namespace WinForm
 
 
             }
+
+        private void add_data_TextChanged(object sender, EventArgs e)
+        {
+
         }
+    }
 }

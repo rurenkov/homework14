@@ -1,4 +1,6 @@
 ﻿using System;
+using Common;
+using BasedOnArray;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +13,16 @@ namespace WinForm
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        public static void ParceD(ref int d)
+        {
+            while (!int.TryParse( out d))
+            {
+                Console.WriteLine("Try again..");
+            }
+        }
+
+
         [STAThread]
         static void Main()
         {

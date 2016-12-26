@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.add_data = new System.Windows.Forms.TextBox();
             this.Data_add = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Exit = new System.Windows.Forms.Button();
@@ -44,18 +44,19 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.Data_add);
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
+            this.flowLayoutPanel1.Controls.Add(this.add_data);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 31);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(523, 28);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // textBox1
+            // add_data
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.add_data.Location = new System.Drawing.Point(81, 3);
+            this.add_data.Name = "add_data";
+            this.add_data.Size = new System.Drawing.Size(100, 20);
+            this.add_data.TabIndex = 1;
+            this.add_data.TextChanged += new System.EventHandler(this.add_data_TextChanged);
             // 
             // Data_add
             // 
@@ -138,7 +139,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label Data_add;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox add_data;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Exit;

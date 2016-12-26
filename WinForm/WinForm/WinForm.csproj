@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BasedOnArray\BasedOnArray.csproj">
+      <Project>{fef18878-9500-414c-befc-0062abf454ef}</Project>
+      <Name>BasedOnArray</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{845a7e6f-af40-48e9-9cec-2bb66ad557eb}</Project>
       <Name>Common</Name>
