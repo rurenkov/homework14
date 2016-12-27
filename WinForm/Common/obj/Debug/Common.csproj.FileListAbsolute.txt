@@ -4,3 +4,9 @@ D:\Sharp\homework14\WinForm\Common\bin\Debug\Common.pdb
 D:\Sharp\homework14\WinForm\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 D:\Sharp\homework14\WinForm\Common\obj\Debug\Common.exe
 D:\Sharp\homework14\WinForm\Common\obj\Debug\Common.pdb
+D:\vet\sharp\homework14\WinForm\Common\bin\Debug\Common.exe.config
+D:\vet\sharp\homework14\WinForm\Common\bin\Debug\Common.exe
+D:\vet\sharp\homework14\WinForm\Common\bin\Debug\Common.pdb
+D:\vet\sharp\homework14\WinForm\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\vet\sharp\homework14\WinForm\Common\obj\Debug\Common.exe
+D:\vet\sharp\homework14\WinForm\Common\obj\Debug\Common.pdb

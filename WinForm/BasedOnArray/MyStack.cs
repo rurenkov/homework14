@@ -14,19 +14,15 @@ namespace BasedOnArray
 
         public int top;
 
-        public MyStack(T[] array) : base(array)
+        public MyStack(int size) : base(size)
         {
 
         }
-
-
         public override bool IsEmpty()
         {
-
             if (top == 0)
             {
                 Console.WriteLine("stack is empty");
-
             }
             return true;
         }

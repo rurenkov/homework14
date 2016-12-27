@@ -1,4 +1,5 @@
-﻿using Common;
+﻿
+using Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace BasedOnArray
         public int tail;
 
 
-        public MyQueue(T[] array) : base(array)
+        public MyQueue(int size) : base(size)
         {
         }
 
@@ -23,7 +24,7 @@ namespace BasedOnArray
 
             if (free <= 0)
             {
-                Console.WriteLine("QUEUE is full");
+           //     Console.WriteLine("QUEUE is full");
             }
             return true;
 
@@ -35,7 +36,7 @@ namespace BasedOnArray
 
             if (free == Array.Length)
             {
-                Console.WriteLine("QUEUE is empty");
+         //       Console.WriteLine("QUEUE is empty");
             }
             return true;
         }
@@ -56,8 +57,8 @@ namespace BasedOnArray
                     head++;
                 }
                 free--;
-                Console.WriteLine("free__" + free);         //debug
-                Console.WriteLine("tail__" + tail);         //debug
+                //          Console.WriteLine("free__" + free);         //debug
+                //          Console.WriteLine("tail__" + tail);         //debug
             }
             else if (IsFull())
             {
@@ -83,8 +84,8 @@ namespace BasedOnArray
                     tail++;
                 }
                 free++;
-                Console.WriteLine("tail__" + tail);         //debug
-                Console.WriteLine("free__" + free);         //debug
+          //      Console.WriteLine("tail__" + tail);         //debug
+            //    Console.WriteLine("free__" + free);         //debug
             }
             else if (IsEmpty())
             {
@@ -94,7 +95,7 @@ namespace BasedOnArray
         public override void Print()
         {
 
-            Console.WriteLine("[{0}]", string.Join(", ", Array));
+        //    Console.WriteLine("[{0}]", string.Join(", ", Array));
 
         }
 

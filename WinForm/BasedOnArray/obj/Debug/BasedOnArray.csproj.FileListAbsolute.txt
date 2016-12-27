@@ -1,1 +1,9 @@
 D:\Sharp\homework14\WinForm\BasedOnArray\obj\Debug\BasedOnArray.csprojResolveAssemblyReference.cache
+D:\vet\sharp\homework14\WinForm\BasedOnArray\obj\Debug\BasedOnArray.csprojResolveAssemblyReference.cache
+D:\vet\sharp\homework14\WinForm\BasedOnArray\bin\Debug\BasedOnArray.exe.config
+D:\vet\sharp\homework14\WinForm\BasedOnArray\bin\Debug\BasedOnArray.exe
+D:\vet\sharp\homework14\WinForm\BasedOnArray\bin\Debug\BasedOnArray.pdb
+D:\vet\sharp\homework14\WinForm\BasedOnArray\bin\Debug\Common.exe
+D:\vet\sharp\homework14\WinForm\BasedOnArray\bin\Debug\Common.pdb
+D:\vet\sharp\homework14\WinForm\BasedOnArray\obj\Debug\BasedOnArray.exe
+D:\vet\sharp\homework14\WinForm\BasedOnArray\obj\Debug\BasedOnArray.pdb

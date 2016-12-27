@@ -12,3 +12,13 @@ D:\Sharp\homework14\WinForm\WinForm\bin\Debug\Common.pdb
 D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.exe.config
 D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.exe
 D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.csprojResolveAssemblyReference.cache
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.Form1.resources
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\vet\sharp\homework14\WinForm\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.exe
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\WinForm.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\BasedOnArray.exe
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\Common.exe
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\BasedOnArray.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\Common.pdb

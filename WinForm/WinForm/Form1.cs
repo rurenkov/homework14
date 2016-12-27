@@ -1,4 +1,6 @@
 ﻿using System;
+using BasedOnArray;
+using Common;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,50 +32,70 @@ namespace WinForm
 
         private void Add_Click(object sender, EventArgs e)
         {
-            int d = 0;
+            int size = 0;
+            int numb = 0;
 
-            while (!int.TryParse(add_data_TextChanged, out d))
+
+            while (!int.TryParse(add_data.Text, out size))
             {
-                Console.WriteLine("Try again..");
+                MessageBox.Show("Try again...");
+                // Console.WriteLine("Try again..");
             }
 
-                       
-                Stopwatch watchArrayStackAdd = new Stopwatch();
-                //Stopwatch watchDynamicArrayStackAdd = new Stopwatch();
-                //Stopwatch watchLinkedListStackAdd = new Stopwatch();
-                //Stopwatch watchEmbeddedStackAdd = new Stopwatch();
-
-                //Stopwatch watchArrayStackRemove = new Stopwatch();
-                //Stopwatch watchDynamicArrayStackRemove = new Stopwatch();
-                //Stopwatch watchLinkedListStackRemove = new Stopwatch();
-                //Stopwatch watchEmbeddedStackRemove = new Stopwatch();
-
-                //Array based
-                watchArrayStackAdd.Start();
-                var newArrayBasedStack = new MyStack<int>(size);
-                for (int i = 0; i < size; i++)
-                {
-                    newArrayBasedStack.Push(123);
-                }
-                watchArrayStackAdd.Stop();
-                resultValueAddArrayBasedStackLabel.Text = String.Format("{0} ms", watchArrayStackAdd.ElapsedMilliseconds);
-
-                watchArrayStackRemove.Start();
-                int tempValue1 = 0;
-                for (int i = 0; i < size; i++)
-                {
-                    tempValue1 = newArrayBasedStack.Pop();
-                }
-                watchArrayStackRemove.Stop();
-                resultValueRemoveArrayBasedStackLabel.Text = String.Format("{0} ms", watchArrayStackRemove.ElapsedMilliseconds);
-
-
-
+            while (!int.TryParse(NumberOfElements.Text, out numb))
+            {
+                MessageBox.Show("Try again...");
+                // Console.WriteLine("Try again..");
             }
+
+            Stopwatch watchArrayQueueAdd = new Stopwatch();
+            Stopwatch watchDynamicQueueAdd = new Stopwatch();
+            //Stopwatch watchLinkedListStackAdd = new Stopwatch();
+            //Stopwatch watchEmbeddedStackAdd = new Stopwatch();
+
+            //Stopwatch watchArrayStackRemove = new Stopwatch();
+            //Stopwatch watchDynamicArrayStackRemove = new Stopwatch();
+            //Stopwatch watchLinkedListStackRemove = new Stopwatch();
+            //Stopwatch watchEmbeddedStackRemove = new Stopwatch();
+
+            
+            //watchArrayQueueAdd.Start();
+            MyQueue<int> ArrayBasedQueue = new MyQueue<int>(size);
+            watchArrayQueueAdd.Start();
+            for (int i = 0; i < numb; i++)
+                {
+                    ArrayBasedQueue.Enqueue(1);
+                }
+                    watchArrayQueueAdd.Stop();
+            ArrayQueueResult.Text= String.Format("{0} ms", watchArrayQueueAdd.ElapsedMilliseconds);
+
+
+            
+            //watchDynamicQueueAdd.Start();
+
+
+
+
+        }
 
         private void add_data_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

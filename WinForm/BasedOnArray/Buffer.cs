@@ -16,10 +16,9 @@ namespace BasedOnArray
         public int free;
         public T put;
 
-        public Buffer(T[] array)
+        public Buffer(int size)
         {
-            Array = array;
-
+            Array = new T[size];
             free = Array.Length - head;
         }
         
