@@ -22,7 +22,7 @@ namespace BasedOnArray
         {
             if (top == 0)
             {
-                Console.WriteLine("stack is empty");
+           //     Console.WriteLine("stack is empty");
             }
             return true;
         }
@@ -35,7 +35,7 @@ namespace BasedOnArray
 
             if (top > Array.Length)
             {
-                Console.WriteLine("Stack is full");
+             //   Console.WriteLine("Stack is full");
             }
             return true;
         }
@@ -50,12 +50,11 @@ namespace BasedOnArray
 
             if (top != Array.Length)
             {
-                Console.WriteLine("PUT_ " + put);         //debug
                 Array[top] = put;
                 top++;
-                Console.WriteLine("array top_ " + Array[top]);         //debug
+
             }
-            Console.WriteLine("top_push_" + top);         //debug
+
 
 
         }
@@ -72,7 +71,7 @@ namespace BasedOnArray
                 top--;
             }
 
-            Console.WriteLine("top_pop_" + top);
+        //    Console.WriteLine("top_pop_" + top);
             return Array[top];
 
         }
@@ -92,7 +91,7 @@ namespace BasedOnArray
         public override void Print()
         {
 
-            Console.WriteLine("[{0}]", string.Join(", ", Array));
+        //    Console.WriteLine("[{0}]", string.Join(", ", Array));
 
         }
 

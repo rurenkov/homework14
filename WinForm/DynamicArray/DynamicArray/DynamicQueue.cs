@@ -6,26 +6,31 @@ using System.Threading.Tasks;
 
 namespace DynamicArray
 {
-    public class DynamicQueue<T>
+    public class DynamicQueue<T>:DynamicArray<T>
+
     {
 
+    //  DynamicQueue<T> dynamicQueue = new DynamicQueue<T>();
 
-
-        DynamicArray<T> dynamicArray = new DynamicArray<T>();
-
-        public void Equeue(T put)
+        public DynamicQueue(int capacity) : base(capacity)
         {
-            dynamicArray.Add(put);
 
         }
 
 
+        public void Equeue(T put)
+        {
+         
+            Add(put);
+
+        }
+        
+
         public void Dequeue(int IndexToInsert)
 
         {
-
-            dynamicArray.Get(IndexToInsert);
-            dynamicArray.Remove(IndexToInsert);
+            Get(IndexToInsert);
+            Remove(IndexToInsert);
 
 
         }
@@ -33,7 +38,7 @@ namespace DynamicArray
         public bool IsFull()
         {
 
-            if (dynamicArray.size == dynamicArray.maxSize)
+            if (size == maxSize)
             {
                 Console.WriteLine("QUEUE is full");
             }
@@ -45,7 +50,7 @@ namespace DynamicArray
         public bool IsEmpty()
         {
 
-            if (dynamicArray.size == 0)
+            if (size == 0)
             {
                 Console.WriteLine("QUEUE is empty");
             }

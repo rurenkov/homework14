@@ -89,6 +89,14 @@
       <Project>{845a7e6f-af40-48e9-9cec-2bb66ad557eb}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DynamicArray\DynamicArray\DynamicArray.csproj">
+      <Project>{be4292f4-ba17-42f9-89fd-46d6cb45440c}</Project>
+      <Name>DynamicArray</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinkedList\LinkedList.csproj">
+      <Project>{088f4f27-dc70-4b73-ab21-7df2eb9ec14e}</Project>
+      <Name>LinkedList</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

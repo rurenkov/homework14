@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace DynamicArray
 {
-    public class DynamicStack<T>
+    public class DynamicStack<T>:DynamicArray<T>
     {
 
 
-        DynamicArray<T> dynamicArray = new DynamicArray<T>();
-        private T size;
+        //  DynamicArray<T> dynamicArray = new DynamicArray<T>();
+        //private int Stacksize;
 
-
-
+        public DynamicStack(int capacity) : base(capacity)
+        {
+        }
 
 
 
@@ -23,44 +24,35 @@ namespace DynamicArray
         //*******************************************************//
         public void Push(T put)
         {
-            dynamicArray.Add(put);
-            
+            Add(put);
+
         }
 
         //*******************************************************//
         // pop method;
         //*******************************************************//
-        public T Pop()
+        public void Pop()
         {
-
-            int size = dynamicArray.size - 1;
-
-
-            dynamicArray.Remove(dynamicArray.size - 1);
-            return this.size;
+            
+           size = size - 1;
+           Remove(size - 1);
+           //return size;
 
         }
         //*******************************************************/
         // peek method;
         //*******************************************************//
 
-        public T Peek()
+        public void Peek()
         {
 
-            int size = dynamicArray.size - 1;
+            size = size - 1;
             //size = size - 1;
-            return this.size;
+            //return this.size;
 
 
         }
 
-
-        public void Print()
-        {
-
-            Console.WriteLine("[{0}]", string.Join(", ", dynamicArray.Array));
-
-        }
 
 
     }

@@ -22,3 +22,7 @@ D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\BasedOnArray.exe
 D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\Common.exe
 D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\BasedOnArray.pdb
 D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\Common.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\DynamicArray.exe
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\LinkedList.exe
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\DynamicArray.pdb
+D:\vet\sharp\homework14\WinForm\WinForm\bin\Debug\LinkedList.pdb

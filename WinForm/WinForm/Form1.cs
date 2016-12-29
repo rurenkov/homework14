@@ -1,5 +1,6 @@
 ﻿using System;
 using BasedOnArray;
+using DynamicArray;
 using Common;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +35,7 @@ namespace WinForm
         {
             int size = 0;
             int numb = 0;
+            int capacity = 1;
 
 
             while (!int.TryParse(add_data.Text, out size))
@@ -49,7 +51,9 @@ namespace WinForm
             }
 
             Stopwatch watchArrayQueueAdd = new Stopwatch();
+            Stopwatch watchArrayStackPush = new Stopwatch();
             Stopwatch watchDynamicQueueAdd = new Stopwatch();
+            Stopwatch watchDynamicStackPush = new Stopwatch();
             //Stopwatch watchLinkedListStackAdd = new Stopwatch();
             //Stopwatch watchEmbeddedStackAdd = new Stopwatch();
 
@@ -58,8 +62,10 @@ namespace WinForm
             //Stopwatch watchLinkedListStackRemove = new Stopwatch();
             //Stopwatch watchEmbeddedStackRemove = new Stopwatch();
 
-            
-            //watchArrayQueueAdd.Start();
+
+            /***************************************************/
+            /***************** Arrays **************************/
+            /***************************************************/
             MyQueue<int> ArrayBasedQueue = new MyQueue<int>(size);
             watchArrayQueueAdd.Start();
             for (int i = 0; i < numb; i++)
@@ -69,10 +75,43 @@ namespace WinForm
                     watchArrayQueueAdd.Stop();
             ArrayQueueResult.Text= String.Format("{0} ms", watchArrayQueueAdd.ElapsedMilliseconds);
 
-
+            //Stack
+            MyStack<int> ArrayBasedStack = new MyStack<int>(size);
+            watchArrayStackPush.Start();
+            for (int i = 0; i < numb; i++)
+            {
+                ArrayBasedStack.Push(1);
+            }
+            watchArrayStackPush.Stop();
+            ArrayStackResults.Text = String.Format("{0} ms", watchArrayStackPush.ElapsedMilliseconds);
             
-            //watchDynamicQueueAdd.Start();
 
+
+
+
+            /***************************************************/
+            /*************** Dymamics **************************/
+            /***************************************************/
+
+            DynamicQueue<int> dynamicQueue = new DynamicQueue<int>(capacity);
+            watchDynamicQueueAdd.Start();
+            for (int i = 0; i < numb; i++)
+            {
+                dynamicQueue.Equeue(1);
+            }
+            watchDynamicQueueAdd.Stop();
+            DynamicQueueResults.Text = String.Format("{0} ms", watchDynamicQueueAdd.ElapsedMilliseconds);
+
+            //watchDynamicStackPush
+
+            DynamicStack<int> dynamicStack = new DynamicStack<int>(capacity);
+            watchDynamicStackPush.Start();
+            for (int i = 0; i < numb; i++)
+            {
+                dynamicQueue.Equeue(1);
+            }
+            watchDynamicStackPush.Stop();
+            DynamicStackResult.Text = String.Format("{0} ms", watchDynamicStackPush.ElapsedMilliseconds);
 
 
 
@@ -96,6 +135,11 @@ namespace WinForm
         private void label2_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

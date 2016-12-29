@@ -8,17 +8,9 @@ namespace DynamicArray
 {
     public class DynamicArray<T> : Dynamic<T>
     {
-        public const int gFactor = 2;
-        public int capacity = 1;
-        public T addValue;
-        public int size;
-        public int IndexToInsert;
-        public int maxSize = 10;
-
-        public DynamicArray()
+      
+        public DynamicArray(int capacity) : base(capacity)
         {
-            Array = new T[capacity];
-            //capacity = array.Length;
         }
 
 
@@ -49,7 +41,7 @@ namespace DynamicArray
             }
 
         }
-
+        
 
         public override void Add(T addValue)
         {

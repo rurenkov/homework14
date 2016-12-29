@@ -16,7 +16,19 @@ namespace DynamicArray
         public abstract void Remove(int IndexToInser);
         public abstract T Get(int IndexToInsert);
         public T[] Array;
+        public int size;
+        public T addValue;
+        public const int gFactor = 2;
+        public int capacity=1;
+        public int maxSize = 1000000;
+        public int IndexToInsert;
 
+        public  Dynamic(int capacity)
+        {
+            Array = new T[capacity];
+            //capacity = array.Length;
+        }
+        
 
 
     }
