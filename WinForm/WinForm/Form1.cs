@@ -1,6 +1,8 @@
 ﻿using System;
 using BasedOnArray;
 using DynamicArray;
+using MyLinkedList;
+
 using Common;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,13 +56,10 @@ namespace WinForm
             Stopwatch watchArrayStackPush = new Stopwatch();
             Stopwatch watchDynamicQueueAdd = new Stopwatch();
             Stopwatch watchDynamicStackPush = new Stopwatch();
-            //Stopwatch watchLinkedListStackAdd = new Stopwatch();
-            //Stopwatch watchEmbeddedStackAdd = new Stopwatch();
+            Stopwatch watchLinkedListQueueAdd = new Stopwatch();
+            Stopwatch watchLinkedListStackAdd = new Stopwatch();
 
-            //Stopwatch watchArrayStackRemove = new Stopwatch();
-            //Stopwatch watchDynamicArrayStackRemove = new Stopwatch();
-            //Stopwatch watchLinkedListStackRemove = new Stopwatch();
-            //Stopwatch watchEmbeddedStackRemove = new Stopwatch();
+           
 
 
             /***************************************************/
@@ -102,18 +101,41 @@ namespace WinForm
             watchDynamicQueueAdd.Stop();
             DynamicQueueResults.Text = String.Format("{0} ms", watchDynamicQueueAdd.ElapsedMilliseconds);
 
-            //watchDynamicStackPush
-
+           
             DynamicStack<int> dynamicStack = new DynamicStack<int>(capacity);
             watchDynamicStackPush.Start();
             for (int i = 0; i < numb; i++)
             {
-                dynamicQueue.Equeue(1);
+                dynamicStack.Push(1);
             }
             watchDynamicStackPush.Stop();
             DynamicStackResult.Text = String.Format("{0} ms", watchDynamicStackPush.ElapsedMilliseconds);
 
 
+            /***************************************************/
+            /*************** Linked List ***********************/
+            /***************************************************/
+
+            MyLinkedList<int> LinkedListQueue = new MyLinkedList<int>(size);
+
+            watchLinkedListQueueAdd.Start();
+            for (int i = 0; i < numb; i++)
+            {
+                LinkedListQueue.Add(1);
+            }
+            watchLinkedListQueueAdd.Stop();
+            LinkedQueueResult.Text = String.Format("{0} ms", watchLinkedListQueueAdd.ElapsedMilliseconds);
+
+            MyLinkedList<int> LinkedListStack = new MyLinkedList<int>(size);
+
+            watchLinkedListStackAdd.Start();
+            for (int i = 0; i < numb; i++)
+            {
+                LinkedListQueue.Add(1);  
+            }
+            watchLinkedListStackAdd.Stop();
+            LinkedStackResult.Text = String.Format("{0} ms", watchLinkedListStackAdd.ElapsedMilliseconds);
+            
 
         }
 

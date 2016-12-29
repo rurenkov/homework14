@@ -4,12 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkedList
+namespace MyLinkedList
 {
-    public class LinkedList<T>
+    public class MyLinkedList<T>
     {
 
         public Node<T> head = null;   //init empty head of node
+        private T size;
+
+
+        public MyLinkedList(T size)
+        {
+            this.size = size;
+        }
+
 
 
         public void Add(T value)
@@ -39,10 +47,12 @@ namespace LinkedList
             }
             else if (head == null)
             {
-                Console.WriteLine("Nothing to delete");
+      //          Console.WriteLine("Nothing to delete");
             }
 
         }
+
+     
 
 
         public void Print()
@@ -51,7 +61,7 @@ namespace LinkedList
 
             while (temp != null)
             {
-                Console.WriteLine(temp.NodeValue);
+           //     Console.WriteLine(temp.NodeValue);
                 temp = temp.Next;
 
             }

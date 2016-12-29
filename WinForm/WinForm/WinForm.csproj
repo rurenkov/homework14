@@ -93,9 +93,9 @@
       <Project>{be4292f4-ba17-42f9-89fd-46d6cb45440c}</Project>
       <Name>DynamicArray</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LinkedList\LinkedList.csproj">
+    <ProjectReference Include="..\LinkedList\MyLinkedList.csproj">
       <Project>{088f4f27-dc70-4b73-ab21-7df2eb9ec14e}</Project>
-      <Name>LinkedList</Name>
+      <Name>MyLinkedList</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
